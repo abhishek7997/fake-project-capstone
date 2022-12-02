@@ -1,5 +1,5 @@
 FROM node                    // Define a base image
-COPY ./ ./                    // Copy project files to the container
+COPY . .                    // Copy project files to the container
 RUN npm init --yes
 RUN npm install              // Install node packages
 RUN npm install http-server -g
